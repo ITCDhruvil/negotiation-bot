@@ -150,7 +150,7 @@ export type FineTuneConfig = {
   base_model: string;
   min_examples: number;
   suffix: string;
-  n_epochs: number | null;
+  n_epochs: number | "auto" | null;
   auto_promote: boolean;
   tick_seconds: number;
   allowed_base_models: string[];
