@@ -1,0 +1,20 @@
+SKODA AUTO INDIA
+Request for Quotation
+
+RFQ title: Q4 fascia refresh — Pune plant
+Plant: Pune
+Needed by: 2026-11-30
+
+Part name: Front Bumper Fascia
+Category: Body
+Vendor: Plastic Omnium India
+Vendor quoted unit price: ₹8,400
+Quantity: 60
+MOQ: 30
+Lead time: 28 days
+Payment terms: Net 45
+Target unit price: ₹7,200
+Max acceptable unit price: ₹8,000
+Warranty: 24 months
+Spec: Painted front bumper fascia, colour-matched to the Pune line. OEM equivalent. 60 units this release.
+Alternate vendor: Magna Exteriors at ₹7,850

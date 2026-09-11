@@ -1,0 +1,153 @@
+{
+  "company_name": "SKODA",
+  "requests": [
+    {
+      "request_id": "rfq-2026-041",
+      "title": "Q3 lighting & chassis refresh — Pune plant",
+      "plant": "Pune",
+      "needed_by": "2026-10-15",
+      "parts": [
+        {
+          "part_id": "headlight-lh",
+          "part_name": "Headlight Assembly LH",
+          "category": "Lighting",
+          "vendor_id": "valeo-pune",
+          "vendor_name": "Valeo Lighting India",
+          "vendor_quoted_unit_price": 18500,
+          "quantity": 40,
+          "moq": 20,
+          "target_unit_price": 16200,
+          "max_acceptable_unit_price": 17800,
+          "lead_time_days": 21,
+          "payment_terms_default": "Net 30",
+          "target_lead_time_days": 21,
+          "max_acceptable_lead_time_days": 35,
+          "max_acceptable_moq": 50,
+          "preferred_payment_terms": "Net 60",
+          "fastest_payment_terms": "Net 30",
+          "min_warranty_months": 24,
+          "spec_blurb": "OEM-equivalent left headlight for the Pune line. Comparable Hella quote on file at a lower unit price. 40 units this release.",
+          "alternate_vendor_quotes": [
+            {"vendor_id": "hella-chennai", "vendor_name": "Hella India", "unit_price": 17200}
+          ]
+        },
+        {
+          "part_id": "brake-caliper-fr",
+          "part_name": "Front Brake Caliper",
+          "category": "Brakes",
+          "vendor_id": "endurance-aurangabad",
+          "vendor_name": "Endurance Technologies",
+          "vendor_quoted_unit_price": 7200,
+          "quantity": 80,
+          "moq": 40,
+          "target_unit_price": 6100,
+          "max_acceptable_unit_price": 6900,
+          "lead_time_days": 28,
+          "payment_terms_default": "Net 30",
+          "target_lead_time_days": 28,
+          "max_acceptable_lead_time_days": 42,
+          "max_acceptable_moq": 100,
+          "preferred_payment_terms": "Net 45",
+          "fastest_payment_terms": "Net 30",
+          "min_warranty_months": 24,
+          "spec_blurb": "Front caliper, 80 units. Mando has a stored alternate at ₹6,450/unit. Lead time is the other lever if unit price stalls.",
+          "alternate_vendor_quotes": [
+            {"vendor_id": "mando-chennai", "vendor_name": "Mando India", "unit_price": 6450}
+          ]
+        },
+        {
+          "part_id": "wiring-harness-cabin",
+          "part_name": "Cabin Wiring Harness",
+          "category": "Electrical",
+          "vendor_id": "yazaki-pune",
+          "vendor_name": "Yazaki India",
+          "vendor_quoted_unit_price": 12500,
+          "quantity": 50,
+          "moq": 25,
+          "target_unit_price": 10800,
+          "max_acceptable_unit_price": 12000,
+          "lead_time_days": 35,
+          "payment_terms_default": "Net 45",
+          "target_lead_time_days": 35,
+          "max_acceptable_lead_time_days": 49,
+          "max_acceptable_moq": 60,
+          "preferred_payment_terms": "Net 60",
+          "fastest_payment_terms": "Net 30",
+          "min_warranty_months": 18,
+          "spec_blurb": "Cabin harness, 50 units. No second quote on file — do not invent one. Payment terms (Net 30 vs Net 45) are the clean trade if price room runs out.",
+          "alternate_vendor_quotes": []
+        },
+        {
+          "part_id": "chassis-frame-front",
+          "part_name": "Front Chassis Frame",
+          "category": "Chassis",
+          "vendor_id": "bharat-forge",
+          "vendor_name": "Bharat Forge",
+          "vendor_quoted_unit_price": 62000,
+          "quantity": 20,
+          "moq": 10,
+          "target_unit_price": 54000,
+          "max_acceptable_unit_price": 59000,
+          "lead_time_days": 45,
+          "payment_terms_default": "Net 30",
+          "target_lead_time_days": 45,
+          "max_acceptable_lead_time_days": 60,
+          "max_acceptable_moq": 20,
+          "preferred_payment_terms": "Net 45",
+          "fastest_payment_terms": "Net 30",
+          "min_warranty_months": 36,
+          "spec_blurb": "Front chassis frame. Quoted total is ₹12,40,000 — above the automated ₹10L sign-off line. Capture the vendor desk and escalate.",
+          "alternate_vendor_quotes": [
+            {"vendor_id": "ramkrishna-forgings", "vendor_name": "Ramkrishna Forgings", "unit_price": 58500}
+          ]
+        },
+        {
+          "part_id": "brake-pad-axle",
+          "part_name": "Brake Pad Set",
+          "category": "Brakes",
+          "vendor_id": "bosch-nashik",
+          "vendor_name": "Bosch Chassis Systems",
+          "vendor_quoted_unit_price": 800,
+          "quantity": 1500,
+          "moq": 500,
+          "target_unit_price": 680,
+          "max_acceptable_unit_price": 750,
+          "lead_time_days": 18,
+          "payment_terms_default": "Net 30",
+          "target_lead_time_days": 18,
+          "max_acceptable_lead_time_days": 28,
+          "max_acceptable_moq": 2000,
+          "preferred_payment_terms": "Net 45",
+          "fastest_payment_terms": "Net 30",
+          "min_warranty_months": 12,
+          "spec_blurb": "Low unit price, production quantity. 1,500 sets × ₹800 = ₹12,00,000 — the ₹10L total gate fires even though the unit looks cheap. Escalate after capturing the vendor desk.",
+          "alternate_vendor_quotes": [
+            {"vendor_id": "nisshinbo-chennai", "vendor_name": "Nisshinbo India", "unit_price": 740}
+          ]
+        },
+        {
+          "part_id": "rear-subframe",
+          "part_name": "Rear Subframe Assembly",
+          "category": "Chassis",
+          "vendor_id": "mahindra-cie",
+          "vendor_name": "Mahindra CIE Automotive",
+          "vendor_quoted_unit_price": 24800,
+          "quantity": 40,
+          "moq": 20,
+          "target_unit_price": 22000,
+          "max_acceptable_unit_price": 24500,
+          "lead_time_days": 35,
+          "payment_terms_default": "Net 30",
+          "target_lead_time_days": 35,
+          "max_acceptable_lead_time_days": 49,
+          "max_acceptable_moq": 50,
+          "preferred_payment_terms": "Net 45",
+          "fastest_payment_terms": "Net 30",
+          "min_warranty_months": 36,
+          "spec_blurb": "Rear subframe. Opening total ₹9,92,000 — just under the ₹10L gate. A quantity bump to MOQ 42 at ₹24,500 crosses ₹10,00,000. Escalate rather than close above the ceiling.",
+          "alternate_vendor_quotes": []
+        }
+      ]
+    }
+  ]
+}

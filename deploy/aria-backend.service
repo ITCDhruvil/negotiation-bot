@@ -1,0 +1,24 @@
+[Unit]
+Description=Aria procurement negotiation API
+After=network.target postgresql.service redis-server.service
+Wants=postgresql.service redis-server.service
+
+[Service]
+Type=simple
+User=aria
+Group=aria
+WorkingDirectory=/opt/negotiation-chatbot/backend
+EnvironmentFile=-/etc/aria/aria.env
+Environment=BACKEND_HOST=0.0.0.0
+Environment=BACKEND_PORT=8000
+ExecStart=/opt/negotiation-chatbot/backend/.venv/bin/python -m app.main
+Restart=on-failure
+RestartSec=3
+
+# Override the port without editing this unit:
+#   systemctl edit aria-backend
+#   [Service]
+#   Environment=BACKEND_PORT=8001
+
+[Install]
+WantedBy=multi-user.target
