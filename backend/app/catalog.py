@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 from app.models import PartListing, ProcurementRequest
+from app.paths import packaged_data_dir, user_rfqs_path
 
-_DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "mock_catalog.json"
-_USER_PATH = Path(__file__).resolve().parents[1] / "data" / "user_rfqs.json"
+_DATA_PATH = packaged_data_dir() / "mock_catalog.json"
+_USER_PATH = user_rfqs_path()
 
 _PARTS: dict[str, PartListing] | None = None
 _REQUESTS: list[ProcurementRequest] | None = None

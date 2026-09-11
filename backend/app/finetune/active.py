@@ -6,7 +6,9 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-_PATH = Path(__file__).resolve().parents[2] / "data" / "finetune" / "active_model.json"
+from app.paths import finetune_dir
+
+_PATH = finetune_dir() / "active_model.json"
 
 
 def active_path() -> Path:

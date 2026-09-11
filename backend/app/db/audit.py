@@ -14,9 +14,10 @@ from pathlib import Path
 from typing import Any
 
 from app.models import NegotiationSession
+from app.paths import audit_db_path, on_vercel
 
 _LOCK = threading.Lock()
-_PATH = Path(__file__).resolve().parents[2] / "data" / "aria_audit.db"
+_PATH = audit_db_path()
 
 _SCHEMA = """
 CREATE TABLE IF NOT EXISTS turns (
@@ -97,15 +98,16 @@ CREATE TABLE IF NOT EXISTS ft_jobs (
 
 
 def audit_path() -> Path:
-    return _PATH
+    return audit_db_path()
 
 
 def _connect(path: Path | None = None) -> sqlite3.Connection:
-    target = path or _PATH
+    target = path or audit_db_path()
     target.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(target)
     conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA journal_mode=WAL")
+    # WAL needs extra sidecar files; DELETE is safer on ephemeral /tmp.
+    conn.execute("PRAGMA journal_mode=DELETE" if on_vercel() else "PRAGMA journal_mode=WAL")
     conn.executescript(_SCHEMA)
     return conn
 

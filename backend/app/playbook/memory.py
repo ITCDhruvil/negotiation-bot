@@ -10,9 +10,10 @@ from typing import Any
 from uuid import uuid4
 
 from app.models import NegotiationSession, NegotiationStage, PartListing
+from app.paths import strategy_lessons_path
 
 _LOCK = threading.Lock()
-_PATH = Path(__file__).resolve().parents[2] / "data" / "strategy_lessons.json"
+_PATH = strategy_lessons_path()
 _MAX_STORED = 80
 _MAX_RETRIEVE = 3
 

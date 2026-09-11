@@ -9,8 +9,9 @@ from pathlib import Path
 from typing import Any
 
 from app.config import get_settings
+from app.paths import finetune_dir
 
-_PATH = Path(__file__).resolve().parents[2] / "data" / "finetune" / "settings.json"
+_PATH = finetune_dir() / "settings.json"
 
 ALLOWED_BASE_MODELS = (
     "gpt-4o-mini",

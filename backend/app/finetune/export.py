@@ -10,8 +10,9 @@ from app.config import get_settings
 from app.db.audit import fetch_turns, get_label, list_sessions
 from app.finetune.labels import label_session
 from app.llm.persona_prompt import render_persona_prompt
+from app.paths import finetune_dir
 
-_OUT_DIR = Path(__file__).resolve().parents[2] / "data" / "finetune"
+_OUT_DIR = finetune_dir()
 _BANNED = (
     "ai assistant",
     "on behalf of",
