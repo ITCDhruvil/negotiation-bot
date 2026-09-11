@@ -14,13 +14,15 @@
     {
       "source": "/backend/:path*",
       "destination": {
-        "service": "backend"
+        "service": "backend",
+        "path": "/:path*"
       }
     },
     {
       "source": "/backend",
       "destination": {
-        "service": "backend"
+        "service": "backend",
+        "path": "/"
       }
     },
     {
